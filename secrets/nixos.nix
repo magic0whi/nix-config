@@ -37,9 +37,8 @@ in {
 
   options.modules.secrets = {
     desktop.enable = mkEnableOption "NixOS Secrets for Desktops";
-
-    server.network.enable = mkEnableOption "NixOS Secrets for Network Servers";
     server.application.enable = mkEnableOption "NixOS Secrets for Application Servers";
+    server.network.enable = mkEnableOption "NixOS Secrets for Network Servers";
     server.operation.enable = mkEnableOption "NixOS Secrets for Operation Servers(Backup, Monitoring, etc)";
     server.kubernetes.enable = mkEnableOption "NixOS Secrets for Kubernetes";
     server.webserver.enable = mkEnableOption "NixOS Secrets for Web Servers(contains tls cert keys)";
